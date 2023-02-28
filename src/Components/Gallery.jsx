@@ -190,6 +190,7 @@ function Gallery() {
               key={index}
               src={value}
               alt={index}
+              loading="lazy"
               className="w-[20rem] rounded-md"
             />
           ))}

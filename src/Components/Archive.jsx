@@ -205,6 +205,7 @@ function Archive() {
               key={index}
               src={value}
               alt=""
+              loading="lazy"
               className="h-[10rem] w-[10rem]"
             />
           ))}
