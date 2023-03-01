@@ -189,7 +189,7 @@ function Archive() {
   return (
     <div
       name="archive"
-      className="flex h-full w-full   flex-col items-center  pt-[4rem]"
+      className="flex h-full w-screen   flex-col items-center  pt-[4rem] md:pt-[2rem]"
     >
       <h2 className="flex-[0_1_auto] text-center text-4xl font-bold underline underline-offset-8">
         1971 Archive
@@ -199,14 +199,14 @@ function Archive() {
           <span className="spinner" />
         </div>
       ) : (
-        <div className="mt-4 grid  flex-[1_1_auto] grid-cols-5 gap-2 px-[18rem]">
+        <div className="mt-4 grid  flex-[1_1_auto] grid-cols-5 place-items-center gap-2 px-[4rem] py-10 sm:px-[1rem] md:grid-cols-4 md:gap-2 md:py-4  ">
           {page.map((value, index) => (
             <img
               key={index}
               src={value}
               alt=""
               loading="lazy"
-              className="h-[10rem] w-[10rem]"
+              className="h-[10rem] w-[10rem]  md:h-[6rem] md:w-[7rem]"
             />
           ))}
         </div>
@@ -216,8 +216,8 @@ function Archive() {
           <li key={index}>
             <button
               type="button"
-              className={`block h-8 w-8 rounded border border-gray-100
-             text-center leading-8 shadow-md ${
+              className={`block h-8 w-8  rounded border border-gray-100
+             text-center leading-8 shadow-xl ${
                value === activeTab
                  ? "bg-accentColor text-bgColor"
                  : "bg-bgColor text-accentColor"

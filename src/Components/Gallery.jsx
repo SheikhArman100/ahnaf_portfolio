@@ -174,24 +174,24 @@ function Gallery() {
   return (
     <div
       name="gallery"
-      className="flex h-full w-full  flex-1 flex-col items-center  pt-[4.5rem]"
+      className="flex h-full w-full   flex-col items-center  pt-[4.5rem] md:pt-[2rem]"
     >
-      <h2 className="flex-[0_1_auto] text-center text-4xl font-bold underline underline-offset-8">
+      <h2 className="flex-[0_1_auto] text-center text-4xl font-bold underline underline-offset-8 md:text-2xl">
         Photo Gallery
       </h2>
       {loading ? (
-        <div className="grid h-[30rem]  place-items-center px-[20rem] py-10">
+        <div className="grid h-[30rem] flex-[1_1_auto]  place-items-center px-[20rem] py-10 md:px-[2rem] lg:px-[12rem] xl:px-[14rem]">
           <span className="spinner" />
         </div>
       ) : (
-        <div className="grid flex-[1_1_auto] grid-cols-3 gap-8 px-[20rem] py-10">
+        <div className="grid  flex-[1_1_auto]  grid-cols-3 place-items-center gap-8 px-[4rem] py-10 text-center sm:grid-cols-2 md:w-screen md:gap-2 md:py-4  ">
           {page.map((value, index) => (
             <img
               key={index}
               src={value}
               alt={index}
               loading="lazy"
-              className="w-[20rem] rounded-md"
+              className=" h-full w-[16rem] rounded-md md:w-[8rem] lg:w-[12rem]"
             />
           ))}
         </div>
@@ -199,7 +199,7 @@ function Gallery() {
       <div className="my-2 flex flex-[0_1_auto] gap-x-20   rounded-lg text-bgColor">
         <button
           style={{ backgroundColor: b1disabled ? "gray" : "black" }}
-          className="rounded-lg  py-4 px-8 text-base font-semibold text-bgColor "
+          className="rounded-lg  py-4 px-8 text-base font-semibold text-bgColor sm:px-1 sm:py-1 sm:text-xs md:px-4 md:py-2 md:text-sm lg:py-3 lg:px-6 "
           type="button"
           disabled={b1disabled}
           onClick={previousPage}
@@ -208,7 +208,7 @@ function Gallery() {
         </button>
         <button
           style={{ backgroundColor: b2disabled ? "gray" : "black" }}
-          className="rounded-lg bg-accentColor py-4 px-8 text-base font-semibold text-bgColor "
+          className="rounded-lg bg-accentColor py-4 px-8 text-base font-semibold text-bgColor sm:px-1 sm:py-1 sm:text-xs md:px-4 md:py-2 md:text-sm lg:py-3 lg:px-6 "
           type="button"
           disabled={b2disabled}
           onClick={nextPage}

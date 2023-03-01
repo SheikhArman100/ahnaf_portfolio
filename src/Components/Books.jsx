@@ -9,15 +9,15 @@ import book8 from "../assets/8.jpeg";
 
 function Books() {
   return (
-    <div name="book" className="h-full w-full  pt-[4.5rem] ">
-      <h2 className="text-center text-4xl font-bold underline underline-offset-8">
+    <div name="book" className="h-full w-full  pt-[4.5rem] md:pt-[2rem] ">
+      <h2 className="text-center text-4xl font-bold underline underline-offset-8 md:text-2xl">
         List of Books
       </h2>
-      <div className="relative  grid grid-cols-2 gap-6 px-[10rem] py-10">
+      <div className="relative  grid grid-cols-2 gap-6 px-[10rem] py-10 md:grid-cols-1 md:px-[3rem]">
         <div className="flex gap-x-4  rounded-md bg-gray-200 p-2 shadow-xl">
           <img className="h-24" src={book1} alt="" />
           <div className="py-2">
-            <h3 className="text-base font-semibold">
+            <h3 className="text-base font-semibold ">
               Muktijudho Hridoyee Momo
             </h3>
             <span className="font-secondText text-sm font-medium text-gray-600">
@@ -81,7 +81,7 @@ function Books() {
         <div className="flex gap-x-4  rounded-md bg-gray-200 p-2  shadow-xl">
           <img className="h-24" src={book4} alt="" />
           <div className="py-2">
-            <h3 className="text-base font-semibold">
+            <h3 className="text-sm font-semibold">
               ১৫ই আগস্ট ট্রাজেডী ও বঙ্গভবনের অজানা অধ্যায়
             </h3>
             <span className="font-secondText text-sm font-medium text-gray-600">

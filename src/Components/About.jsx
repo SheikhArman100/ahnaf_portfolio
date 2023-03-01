@@ -3,17 +3,19 @@ import profile from "../assets/profile.png";
 
 function About() {
   return (
-    <div name="about" className="h-full w-full   pt-[4.5rem]">
-      <h2 className="text-center text-4xl font-bold underline underline-offset-8">
+    <div name="about" className="h-full w-full   pt-[4.5rem] md:pt-[2rem]">
+      <h2 className="text-center text-4xl font-bold underline underline-offset-8 md:text-2xl">
         Author Note
       </h2>
-      <div className="flex w-full flex-col items-center   gap-x-[10rem] py-10 px-[10rem]">
-        <div className="grid aspect-square  h-[16rem] place-items-center   shadow-3xl">
+      <div className="flex w-full flex-col items-center py-10 px-[10rem] sm:px-2 md:px-[4rem]">
+        <div className="grid aspect-square  h-[16rem] place-items-center shadow-3xl   md:h-[12rem]">
           <img className="h-full bg-cover" src={profile} alt="" />
         </div>
-        <div className="py-10">
-          <h3 className="text-center text-4xl font-semibold">Muhammad Musa</h3>
-          <p className="mt-4  text-center font-secondText text-sm font-normal text-gray-600">
+        <div className="py-10 sm:py-3 md:py-5">
+          <h3 className="text-center text-4xl font-semibold md:text-2xl">
+            Muhammad Musa
+          </h3>
+          <p className="mt-4 text-center font-secondText text-sm  font-normal text-gray-600 sm:text-justify md:mt-2 md:text-xs">
             Muhammad Musa is the kind of man of whom legendary tales of bravery
             and patriotism are told to future generations. The second son of
             award-winning teacher, celebrated raconteur and scholar Moulavi

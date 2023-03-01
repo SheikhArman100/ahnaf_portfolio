@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import "./App.css";
 import About from "./Components/About";
 import Archive from "./Components/Archive";
@@ -9,8 +10,9 @@ import Navbar from "./Components/Navbar";
 
 function App() {
   return (
-    <div className=" flex flex-col justify-between">
+    <div className="flex flex-col justify-between">
       <Navbar />
+
       <Home />
       <About />
       <Books />
