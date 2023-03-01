@@ -17,7 +17,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="fixed z-20 flex h-[4rem] w-full items-center justify-between border-b-[1rem] border-t-[1rem]  border-b-[#006a4e]	border-t-[#f42a41] bg-bgColor px-10 transition-[all_0.5s_ease] md:relative md:justify-end md:px-4">
+      <div className="fixed z-20 flex h-[4.2rem] w-full items-center justify-between border-b-[1rem] border-t-[1rem]  border-b-[#006a4e]	border-t-[#f42a41] bg-bgColor px-10 transition-[all_0.5s_ease] md:relative md:justify-end md:px-4">
         <div className="flex flex-[1_1_auto]  items-center justify-center  md:hidden ">
           <ul className=" ml-[4rem] flex cursor-pointer  items-center   gap-x-10 font-secondText  text-xs font-semibold text-accentColor transition-[all_0.5s_ease] ">
             <li className="border-b-2 border-transparent py-2 hover:border-accentColor">
@@ -50,7 +50,7 @@ function Navbar() {
 
         <button
           type="button"
-          className="mr-6 flex-[0_1_auto] rounded-full border border-none bg-accentColor py-2 px-4 text-base font-bold text-bgColor transition-[all_0.5s_ease] hover:border-accentColor hover:bg-bgColor hover:text-accentColor md:hidden"
+          className="mr-6 flex-[0_1_auto] rounded-full border border-accentColor  py-1 px-4 text-base font-bold text-accentColor transition-[all_0.5s_ease]  md:hidden"
         >
           <Link to="contact" smooth duration={500}>
             Contact Me
