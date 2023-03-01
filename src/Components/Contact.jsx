@@ -7,7 +7,7 @@ function Contact() {
   return (
     <div
       name="contact"
-      className="mt-[6rem] flex h-full w-screen flex-col  items-center bg-accentColor  py-4 text-bgColor md:mt-[4rem]"
+      className="mt-[6rem] flex h-full w-screen flex-col  items-center bg-[#006a4e]  py-4 text-bgColor md:mt-[4rem]"
     >
       <div className="text-center text-4xl font-bold underline underline-offset-8 md:text-2xl">
         Contact Information
