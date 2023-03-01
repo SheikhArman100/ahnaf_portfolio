@@ -17,36 +17,30 @@ function Navbar() {
 
   return (
     <>
-      <div
-        style={{
-          backgroundImage:
-            "linear-gradient(315deg, green 0% , red 50%, green 70%)",
-        }}
-        className="fixed z-20 flex h-[4rem] w-full items-center  justify-between px-10 transition-[all_0.5s_ease] md:relative md:justify-end md:px-4"
-      >
+      <div className="fixed z-20 flex h-[4rem] w-full items-center justify-between border-b-[1rem] border-t-[1rem]  border-b-[#006a4e]	border-t-[#f42a41] bg-bgColor px-10 transition-[all_0.5s_ease] md:relative md:justify-end md:px-4">
         <div className="flex flex-[1_1_auto]  items-center justify-center  md:hidden ">
-          <ul className=" ml-[4rem] flex cursor-pointer  items-center   gap-x-10 font-secondText  text-xs font-semibold text-bgColor transition-[all_0.5s_ease] ">
-            <li className="border-b-2 border-transparent py-2 hover:border-bgColor">
+          <ul className=" ml-[4rem] flex cursor-pointer  items-center   gap-x-10 font-secondText  text-xs font-semibold text-accentColor transition-[all_0.5s_ease] ">
+            <li className="border-b-2 border-transparent py-2 hover:border-accentColor">
               <Link to="home" smooth duration={500}>
                 Home
               </Link>
             </li>
-            <li className="border-b-2 border-transparent py-2 hover:border-bgColor">
+            <li className="border-b-2 border-transparent py-2 hover:border-accentColor">
               <Link to="about" smooth duration={500}>
                 Author Note
               </Link>
             </li>
-            <li className="border-b-2 border-transparent py-2 hover:border-bgColor">
+            <li className="border-b-2 border-transparent py-2 hover:border-accentColor">
               <Link to="book" smooth duration={500}>
                 Book Published
               </Link>
             </li>
-            <li className="border-b-2 border-transparent py-2 hover:border-bgColor">
+            <li className="border-b-2 border-transparent py-2 hover:border-accentColor">
               <Link to="gallery" smooth duration={500}>
                 Photo Gallery
               </Link>
             </li>
-            <li className="border-b-2 border-transparent py-2 hover:border-bgColor">
+            <li className="border-b-2 border-transparent py-2 hover:border-accentColor">
               <Link to="archive" smooth duration={500}>
                 1971 Archive
               </Link>
@@ -69,20 +63,17 @@ function Navbar() {
         >
           <AiOutlineMenu
             size={32}
-            className=" text-bgColor transition-[all_0.8s_ease]"
+            className=" text-accentColor transition-[all_0.8s_ease]"
           />
         </button>
       </div>
       {active ? (
         <div
-          style={{
-            backgroundImage: "linear-gradient(315deg, green , red , green )",
-          }}
-          className=" absolute z-30 hidden     w-screen py-2  md:flex md:flex-col md:items-center 
-        md:gap-y-2"
+          className=" absolute z-30 hidden     w-screen border-b-[1rem]  border-t-[1rem] border-b-[#006a4e] border-t-[#f42a41] 
+        bg-bgColor py-2 md:flex  md:flex-col	md:items-center md:gap-y-2"
         >
-          <ul className="flex  cursor-pointer flex-col  items-center justify-center  font-secondText  text-xl font-semibold text-bgColor transition-[all_0.5s_ease] ">
-            <li className="mr-4 mt-2 flex w-screen items-center justify-end">
+          <ul className="flex  cursor-pointer flex-col  items-center justify-center  font-secondText  text-xl font-semibold text-accentColor transition-[all_0.5s_ease] ">
+            <li className="mr-6 mt-2 flex w-screen items-center justify-end">
               <button
                 type="button"
                 onClick={() => setactive(false)}
@@ -90,31 +81,31 @@ function Navbar() {
               >
                 <AiOutlineClose
                   size={32}
-                  className=" text-bgColor transition-[all_0.8s_ease]"
+                  className=" text-accentColor transition-[all_0.8s_ease]"
                 />
               </button>
             </li>
-            <li className="flex items-center justify-center border-b-2 border-transparent py-2 hover:border-bgColor">
+            <li className="flex items-center justify-center border-b-2 border-transparent py-2 hover:border-accentColor">
               <Link to="home" smooth duration={500}>
                 Home
               </Link>
             </li>
-            <li className="border-b-2 border-transparent py-2 hover:border-bgColor">
+            <li className="border-b-2 border-transparent py-2 hover:border-accentColor">
               <Link to="about" smooth duration={500}>
                 Author Note
               </Link>
             </li>
-            <li className="border-b-2 border-transparent py-2 hover:border-bgColor">
+            <li className="border-b-2 border-transparent py-2 hover:border-accentColor">
               <Link to="book" smooth duration={500}>
                 Book Published
               </Link>
             </li>
-            <li className="border-b-2 border-transparent py-2 hover:border-bgColor">
+            <li className="border-b-2 border-transparent py-2 hover:border-accentColor">
               <Link to="gallery" smooth duration={500}>
                 Photo Gallery
               </Link>
             </li>
-            <li className="border-b-2 border-transparent py-2 hover:border-bgColor">
+            <li className="border-b-2 border-transparent py-2 hover:border-accentColor">
               <Link to="archive" smooth duration={500}>
                 1971 Archive
               </Link>
