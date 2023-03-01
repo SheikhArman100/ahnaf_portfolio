@@ -73,7 +73,7 @@ function Navbar() {
         bg-bgColor py-2 md:flex  md:flex-col	md:items-center md:gap-y-2"
         >
           <ul className="flex  cursor-pointer flex-col  items-center justify-center  font-secondText  text-xl font-semibold text-accentColor transition-[all_0.5s_ease] ">
-            <li className="mr-2g mt-2 flex w-screen items-center justify-end">
+            <li className="mt-2 flex w-screen items-center justify-end pr-4">
               <button
                 type="button"
                 onClick={() => setactive(false)}
