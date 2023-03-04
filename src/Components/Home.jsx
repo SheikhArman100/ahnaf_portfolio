@@ -8,7 +8,7 @@ function Home() {
   return (
     <div
       name="home"
-      className="flex h-screen w-screen flex-col items-center pt-[4.5rem] text-center md:pt-[2rem]"
+      className="flex h-full w-screen flex-col items-center pt-[4.5rem] text-center md:pt-[2rem]"
     >
       <div>
         <h2 className="text-center text-7xl font-bold tracking-wide md:text-5xl">
