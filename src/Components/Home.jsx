@@ -1,8 +1,8 @@
 import React from "react";
 
-import flag from "../assets/flag.jpg";
+import flag from "../assets/flag2.jpg";
 import HomeImage from "../assets/home.jpg";
-import image3 from "../assets/image2.jpg";
+import image3 from "../assets/sritiImage.jpg";
 
 function Home() {
   return (
