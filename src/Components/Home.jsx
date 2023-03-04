@@ -23,7 +23,7 @@ function Home() {
           <p>TV personality and Columnist</p>
         </div>
       </div>
-      <div className="flex items-center justify-center gap-x-4">
+      <div className="mx-2 flex items-center justify-center gap-x-4">
         <div className="mt-4 flex border border-accentColor p-2  md:mx-8 md:hidden">
           <img className="h-[16rem] w-[20rem]" src={flag} alt="" />
         </div>
