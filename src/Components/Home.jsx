@@ -12,9 +12,9 @@ function Home() {
       className="flex h-full w-screen flex-col items-center  pt-[4.5rem] text-center md:pt-[2rem]"
     >
       <div>
-        <div className="flex items-center justify-center gap-x-1 sm:flex-col ">
-          <img src={logo} className="h-20 md:h-16" alt="" />
-          <h2 className="text-7xl font-bold tracking-wide   md:text-5xl ">
+        <div className="flex items-center justify-center gap-x-1  ">
+          <img src={logo} className="h-20 md:h-12" alt="" />
+          <h2 className="text-7xl font-bold tracking-wide   md:text-[2.5rem] ">
             Muhammad Musa
           </h2>
         </div>
