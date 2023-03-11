@@ -4,10 +4,10 @@ module.exports = {
   theme: {
     screens: {
       // breakpoints
-      sm: { max: "480px" },
-      md: { max: "768px" },
-      lg: { max: "1024px" },
-      xl: { max: "1280px" },
+      sm: { "max": "480px" },
+      md: { "max": "768px" },
+      lg: { "max": "1024px" },
+      xl: { "max": "1280px" },
       "2xl": { max: "1600px" },
     },
     extend: {
